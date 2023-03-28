@@ -3,3 +3,25 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+video {
+    width: 100%;
+    height: auto;
+}
+.desktop-video{
+    width: 100%;
+    background-color: #101116;
+}
+.mobile-video{
+    width: 100%;
+    background-color: #101116;
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .desktop-video{
+        display: none;
+    }
+    .mobile-video{
+        display: block;
+    }
+}
